@@ -1,6 +1,15 @@
-# Getting Started with Create React App
+# 📢📢 Welcome to reactjs-example! This repository contains a collection of React application examples for learning and reference. You are welcome to contribute and provide feedback.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Features:
+- ✔ PDF handling using pdf.js
+- TODO
+
+### 👨‍💻👨‍💻 Feel free to explore and learn from these examples!
+
+## Comments and Feedback
+
+➡ You can open Issues to report bugs, request features, or ask questions. We warmly welcome contributions and feedback from the community.
+
 
 ## Available Scripts
 
