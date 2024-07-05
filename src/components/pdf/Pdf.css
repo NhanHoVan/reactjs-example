@@ -1,0 +1,25 @@
+* {
+  font-family: 'Inter', sans-serif;
+}
+
+.pdf_react {
+  display: flex;
+  justify-content: center;
+  background-color: #808080;
+}
+
+#ball:hover {
+  cursor: move;
+}
+
+#root {
+  text-align: center;
+  text-align: -webkit-center;
+  align-content: center;
+}
+
+#root #ball {
+  background-color: grey;
+  width: fit-content;
+  margin-top: 5px;
+}
