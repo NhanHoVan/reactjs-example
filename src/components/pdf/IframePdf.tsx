@@ -88,7 +88,7 @@ const IframePdf: React.FC<PdfProps> = ({ model }) => {
   }, [model]);
 
   return (
-    <iframe ref={iframeRef} width="100%" height="600" style={{ border: 'none' }} title='Pdf Viewer'></iframe>
+    <iframe ref={iframeRef} width="100%" height="700" style={{ border: 'none' }} title='Pdf Viewer'></iframe>
   );
 };
 
