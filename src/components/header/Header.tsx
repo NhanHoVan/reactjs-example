@@ -6,7 +6,7 @@ import Menu from './Menu';
 const Header: React.FC = () => {
   return (
     <header className="header">
-      <img src={logo} className="header-logo" alt="logo" />
+      {/* <img src={logo} className="header-logo" alt="logo" /> */}
       <Menu />
     </header>
   );
