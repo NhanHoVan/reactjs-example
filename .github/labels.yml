@@ -1,0 +1,18 @@
+# labels.yml
+
+labels:
+  - name: template:pdf-viewer
+    color: a2eeef
+    description:
+
+  - name: template:document
+    color: 0075ca
+    description:
+
+repos:
+  - name: NhanHoVan/reactjs-example
+    labels:
+      - template:pdf-viewer
+      - template:document
+
+# Add more labels as needed

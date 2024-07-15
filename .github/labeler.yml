@@ -1,0 +1,11 @@
+# labeler.yml
+
+template:document:
+  - changed-files:
+    - any-glob-to-any-file: 'document/*'
+
+template:pdf-viewer:
+  - changed-files:
+    - any-glob-to-any-file: 'pdf/*'
+
+# Add more rules as needed
