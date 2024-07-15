@@ -1,0 +1,30 @@
+name: Add issue label
+on:
+  issues:
+    types:
+      - reopened
+      - opened
+jobs:
+  label_issues:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+    steps:
+      - name: Check existing issues count
+        id: issues_count
+        run: |
+          COUNT=$(gh issue list --repo ${{ github.repository }} --json number | jq length)
+          echo "ISSUES_COUNT=$COUNT" >> $GITHUB_ENV
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Add label issue
+        run: |
+          if [ "${{ env.ISSUES_COUNT }}" -eq 0 ]; then
+            gh issue edit ${{ github.event.issue.number }} --add-label "good first issue"
+          else
+            gh issue edit ${{ github.event.issue.number }} --add-label "help wanted"
+          fi
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_REPO: ${{ github.repository }}
