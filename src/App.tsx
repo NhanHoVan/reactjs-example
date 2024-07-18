@@ -4,7 +4,7 @@ import Header from './components/header/Header';
 import ExampleTemplate2 from './templates/ExampleTemplate2';
 import ExampleTemplate3 from './templates/ExampleTemplate3';
 import './App.css';
-import PDFTemplate from './templates/PDFTemplate';
+import PDFTemplate from './templates/pdf/PDFTemplate';
 
 function App() {
   return (

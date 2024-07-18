@@ -34,7 +34,11 @@ const Pdf: React.FC<PdfProps> = ({ model }) => {
 
   useEffect(() => {
     if (dataPdf) {
-      pdfjsLib.getDocument({ data: dataPdf }).promise.then(async function (pdf) {
+      pdfjsLib.getDocument({
+        data: dataPdf,
+        cMapUrl: "https://unpkg.com/pdfjs-dist@2.16.105/cmaps/",
+        cMapPacked: true
+      }).promise.then(async function (pdf) {
         try {
           const canvasList: HTMLCanvasElement[] = [];
           let totalHeight = 0;
