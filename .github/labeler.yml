@@ -2,10 +2,14 @@
 
 template:document:
   - changed-files:
-    - any-glob-to-any-file: 'document/*'
+    - any-glob-to-any-file: '/*document/*'
 
 template:pdf-viewer:
   - changed-files:
-    - any-glob-to-any-file: 'pdf/*'
+    - any-glob-to-any-file: '/*pdf/*'
+
+workflows:
+  - changed-files:
+    - any-glob-to-any-file: '.github/*'
 
 # Add more rules as needed
